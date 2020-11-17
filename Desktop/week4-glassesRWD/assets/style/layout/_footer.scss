@@ -1,0 +1,215 @@
+
+/*-----------PC-----------*/
+.img{
+    &-classic{
+      max-width: 635px;
+      width: 100%;
+    }
+    &-client-rec{
+      max-width: calc((345-324)*100%);
+      width: 100%;
+    }
+  }
+  
+  .icon{
+    &-nav{
+      max-width: 48px;
+      margin-left: 32px;
+    }
+    &-tel{
+      margin-right: 17px;
+    }
+    &-mail{
+      margin-right: 12px;
+    }
+  }
+  
+  .footer{
+    background: $bg-primary;
+    .footer-bar{
+      padding: 48px 0px 20px;
+      .footer-nav{
+        .footer-nav-title{
+          margin-bottom: 32px;
+          a{
+            font-size: $font-size-p;
+            color: $text-layout;
+            margin-right: 48px;
+            &:hover{
+              color: #FFFF00;
+              transition: all 0.6s ease;
+            }
+          }
+        }
+        .footer-content{
+          li{
+            display: flex;
+            align-items: center;
+          }
+          a{
+            font-size: $font-size-h3;
+            color: $text-layout;
+            &:hover{
+              color: #FFFF00;
+              transition: all 0.6s ease;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom{
+      border-top: 1px solid #FFFFFF;
+      padding: 24px 0 28.43px;
+      .logo{
+        margin-right: 38px;
+      }
+        ul{
+        width: 100%;
+        align-items: center;
+          li{
+          font-size: $font-size-p;
+          color: $text-layout;
+          }
+        .footer-item{
+          a{
+            font-size: $font-size-p;
+            color: $text-layout;
+            margin-left: 62px;
+            &:hover{
+              color: #FFFF00;
+              transition: all 0.6s ease;
+            }
+          }
+        }
+      }
+    } 
+  }
+  
+  /*-------------PAD-------------*/
+  
+  @media (max-width: 992px){
+    .icon{
+      &-about{
+        max-width: 80px;
+        margin-bottom: 16px;
+      }
+      &-classic{
+        max-width: 32px;
+      }
+      &-tel{
+        max-width: 24px;
+        margin-right:12px;
+      }
+      &-mail{
+        max-width: 32px;
+        margin-right: 8px;
+      }
+      &-nav{
+        max-width: 24px;
+        margin-left: 24px;
+      }
+    }
+    
+    .container{
+      max-width: 690px;
+    }
+    
+    .footer-bar{
+      padding: 40px 0 24px;
+      .footer-nav{
+        .footer-nav-title{
+          margin-bottom: 8px;
+          li{
+            margin-right: -8px;
+          }
+        }
+        .footer-content{
+          li{
+            margin-bottom: -12px;
+          }
+        }
+      }  
+    }
+    .footer-bottom{
+      padding: 24px 0px 40px;
+      .logo{
+        display: none;
+        ul{
+          li{
+            font-size: 16px;
+          }
+          .footer-item{
+            a{
+              font-size: 14px;
+              margin-left: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /*-------------MOBIL-------------*/
+  
+  @media (max-width: 767px){
+    .container {
+        max-width: 375px;
+      }
+    .icon{
+      &-about{
+        max-width: 80px;
+        margin-bottom: 16px;
+      }
+      &-classic{
+        max-width: 32px;
+      }
+      &-tel{
+        max-width: 20px;
+        margin-right:4px;
+      }
+      &-mail{
+        max-width: 20px;
+        margin-right: 5px;
+      }
+      &-nav{
+        max-width: 24px;
+        margin-left: 24px;
+      }
+    }
+    
+    
+    .footer-bar{
+      padding: 24px 0px;
+      .footer-nav-title{
+        display: none;
+      }
+      .footer-content{
+        li a{
+          font-size: 16px;
+        }
+      }
+      .footer-bottom{
+        border-top: 1px solid #FFFFFF;
+        padding: 18px 0px 20px;
+        .logo{
+          display: inline;
+          width: 46px;
+          height: 27.93px;
+          align-self: flex-end;
+        }
+        ul{
+          flex-wrap: wrap;
+          display: block;
+          order: -1;
+          .footer-item{
+            display: block;
+            margin-bottom: 8px;
+            a{
+              font-size: 14px;
+              margin: 0 0 8px 0;
+            }
+          }
+        }
+      }
+    }
+  }
